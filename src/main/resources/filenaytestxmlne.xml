@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                   http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="test" class="com.codegym.beans.xml.ProductsTestNe">
+        <property name="id" value="1"/>
+        <property name="description" value="Bảnh"/>
+        <property name="name" value="Tín Võ"/>
+        <property name="price" value="100"/>
+    </bean>
+
+    <bean id="test1" class="com.codegym.beans.xml.ProductsTestNe">
+        <property name="id" value="2"/>
+        <property name="description" value="Bảnh1"/>
+        <property name="name" value="Tín Võ1"/>
+        <property name="price" value="200"/>
+    </bean>
+
+    <bean id="test2" class="com.codegym.beans.xml.ProductsTestNe">
+        <property name="id" value="3"/>
+        <property name="description" value="Bảnh2"/>
+        <property name="name" value="Tín Võ2"/>
+        <property name="price" value="300"/>
+    </bean>
+    <bean id="test3" class="com.codegym.beans.xml.ProductsTestNe">
+        <property name="id" value="4"/>
+        <property name="description" value="Bảnh3"/>
+        <property name="name" value="Tín Võ3"/>
+        <property name="price" value="400"/>
+    </bean>
+
+</beans>

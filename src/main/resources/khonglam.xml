@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Bean cho class DoiAn -->
+    <bean id="doiAn" class="com.codegym.injection.constructor.DoiAn"/>
+
+    <!-- Bean cho controllerForDoiAn, inject DoiAn vào -->
+    <bean id="khonglam" class="com.codegym.injection.constructor.controllerForDoiAn">
+        <constructor-arg ref="doiAn"/>
+    </bean>
+
+</beans>
